@@ -21,7 +21,31 @@
         <div class="nav-logo">
           <a href="#home">MyPortfolio</a>
         </div>
-
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://drive.google.com/file/d/1GCskQAQJgLMpNMbaLRCQcYRk3ju1XX54/view?usp=drive_link"
+              target="_blank"
+              class="resume-btn"
+              >Resume</a
+            >
+          </li>
+        </ul>
         <div class="hamburger" id="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -35,14 +59,18 @@
       <div class="container">
         <div class="hero-content">
           <div class="hero-text">
-            <h1>Hi, I'm Dhruv Iyer</h1>
-            <h2>Data Analytics & Web Developer📈</h2>
-            <p>
-          Develop others ideas through my code 
-            </p>
-       
-           <!-- Replace this line in your HTML -->
-<a href="https://drive.google.com/file/d/1GCskQAQJgLMpNMbaLRCQcYRk3ju1XX54/view?usp=drive_link" target="_blank" class="resume-btn">Resume</a>
+            <h1>Hi, I'm <span class="highlight">Dhruv Iyer</span> 👋</h1>
+            <h2>Data Analytics & Web Developer 📈</h2>
+            <p>Develop others ideas through my code</p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a
+                href="https://drive.google.com/file/d/1GCskQAQJgLMpNMbaLRCQcYRk3ju1XX54/view?usp=drive_link"
+                target="_blank"
+                class="btn btn-secondary"
+              >
+                <i class="fas fa-download"></i> Download Resume
+              </a>
             </div>
           </div>
           <div class="hero-image">
@@ -56,46 +84,57 @@
         </div>
       </div>
     </section>
-     <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-              
-                <div class="about-text">
-                    <h2 class="section-title">About Me</h2>
-                    <p>Hello! I’m currently pursuing a B.Tech in Computer Science, and I’m absolutely loving every bit of it. The world of technology and software has always fascinated me—whether it’s diving into algorithms, exploring new programming paradigms, or building projects that solve real-world problems. I thrive on the constant learning that comes with this field and am always eager to expand my knowledge, whether through coursework, hackathons, or self-driven exploration.
 
-Beyond tech, I have a deep appreciation for art and music—they fuel my creativity and offer a refreshing balance to the logical rigor of coding. I also enjoy sports, both as a participant and a spectator, as they teach discipline, teamwork, and perseverance—qualities that translate well into my academic and professional life. </p>
-                    
-                
-                        </div>
-                    
-                </div>
-            </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="section-title">About Me</h2>
+            <p>
+              Hello! I'm currently pursuing a B.Tech in Computer Science, and
+              I'm absolutely loving every bit of it. The world of technology and
+              software has always fascinated me—whether it's diving into
+              algorithms, exploring new programming paradigms, or building
+              projects that solve real-world problems.
+            </p>
+            <p>
+              I thrive on the constant learning that comes with this field and
+              am always eager to expand my knowledge, whether through
+              coursework, hackathons, or self-driven exploration.
+            </p>
+            <p>
+              Beyond tech, I have a deep appreciation for art and music—they
+              fuel my creativity and offer a refreshing balance to the logical
+              rigor of coding. I also enjoy sports, both as a participant and a
+              spectator, as they teach discipline, teamwork, and
+              perseverance—qualities that translate well into my academic and
+              professional life.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
-
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
       <div class="container">
         <h2 class="section-title">My Projects</h2>
         <div class="projects-grid">
-
-
+          <!-- Project 1: Game Review Website -->
           <div class="project-card">
             <div class="project-image">
               <img
                 src="https://assets.hardwarezone.com/img/2024/12/MarvelRivalsCharacters-1.jpg"
-                alt="Web Data Manager"
+                alt="Game Review Website"
               />
-              <div class="project-overlay">
- 
-              </div>
+              <div class="project-overlay"></div>
             </div>
             <div class="project-content">
-              <h3>Game review Website</h3>
+              <h3>Game Review Website</h3>
               <p>
-                A web application for Rating and reviewing the top games of 2024 
+                A web application for rating and reviewing the top games of 2024
+                with user authentication and interactive features.
               </p>
               <div class="project-tags">
                 <span class="tag">JavaScript</span>
@@ -107,18 +146,17 @@ Beyond tech, I have a deep appreciation for art and music—they fuel my creativ
             </div>
           </div>
 
+          <!-- Project 2: College Management System -->
           <div class="project-card">
             <div class="project-image">
               <img
                 src="https://memberpress.com/wp-content/uploads/2020/10/learning-management-system.jpg"
                 alt="College Management System"
               />
-              <div class="project-overlay">
-                
-              </div>
+              <div class="project-overlay"></div>
             </div>
             <div class="project-content">
-              <h3>College Management System(LMS)</h3>
+              <h3>College Management System (LMS)</h3>
               <p>
                 A Java-based application for managing student records and
                 academic information with secure data handling.
@@ -130,7 +168,31 @@ Beyond tech, I have a deep appreciation for art and music—they fuel my creativ
               </div>
             </div>
           </div>
+
+          <!-- Project 3: Gallery App  -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1375/1375106.png"
+                alt="Gallery App"
+              />
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <h3>Gallery App (CT)</h3>
+              <p>
+                A fun gallery app with features to like photos, browse
+                collections, and interactive user interface.
+              </p>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS3</span>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- End of projects-grid -->
       </div>
     </section>
 
@@ -205,8 +267,8 @@ Beyond tech, I have a deep appreciation for art and music—they fuel my creativ
             <h3>Contact Information</h3>
             <p>
               Feel free to reach out to me through the form or via the contact
-              details below. I'm always open to discussing new projects,
-              creative ideas, or opportunities to be part of your vision.
+              details below. I'm always open to discussing new projects and
+              creative ideas.
             </p>
             <div class="contact-details">
               <div class="contact-item">
@@ -217,14 +279,16 @@ Beyond tech, I have a deep appreciation for art and music—they fuel my creativ
               </div>
               <div class="contact-item">
                 <i class="fab fa-linkedin"></i>
-                <a href="www.linkedin.com/in/dhruv-iyer-87b10b300" target="_blank"
+                <a
+                  href="https://www.linkedin.com/in/dhruv-iyer-87b10b300"
+                  target="_blank"
                   >linkedin.com/in/dhruv-iyer</a
                 >
               </div>
               <div class="contact-item">
                 <i class="fab fa-github"></i>
                 <a href="https://github.com/dhruvIyer005" target="_blank"
-                  >github.com/dhruv-iyer</a
+                  >github.com/dhruvIyer005</a
                 >
               </div>
             </div>
@@ -238,10 +302,10 @@ Beyond tech, I have a deep appreciation for art and music—they fuel my creativ
       <div class="container">
         <div class="footer-content">
           <div class="footer-left">
-            <h3>Dhruv</h3>
+            <h3>Dhruv.dev</h3>
             <p>Will continue to grow</p>
           </div>
-        
+        </div>
         <div class="footer-bottom">
           <p>&copy; 2025 Dhruv.Iyer. All rights reserved.</p>
         </div>
